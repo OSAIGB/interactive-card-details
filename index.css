@@ -1,0 +1,399 @@
+:root {
+    --linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --red: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family:'Space Grotesk', sans-serif;;
+    background-color: rgb(242, 242, 236);
+    text-align: center;
+}
+.bg-main{
+    position: absolute;
+    z-index: -2;
+    height: 100vh;
+    width: 35%;
+    left: 0;
+    bottom: 0;
+}
+.thank-you{
+    display: none;
+    padding-top: 50px;
+}
+
+.card-front{
+    background: url(./images/bg-card-front.png) no-repeat center center/cover;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 100px;
+    position: relative;
+    left: -100px;
+}
+.card-back{
+    background: url(./images/bg-card-back.png) no-repeat center center/cover;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 100px;
+    position: relative;
+}
+main{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+form{
+    margin-top: 50px;
+    text-align: left;
+}
+/* .exp-date-inputs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+} */
+.input-error{
+    border: 1px solid red;
+}
+.input-{
+color: red;
+}
+.input-error-message{
+    display: none;
+    color: red;
+}
+.date-cvc{
+    display: flex;
+    justify-content: space-between;
+}
+.ïnputss{
+    display: block;
+}
+/* .input-error{
+display: none;
+} */
+.card {
+    position: relative;
+    left: -188px;
+}
+.card-logo{
+    width: 60px;
+}
+.circles{
+    position: relative;
+    left: -179px;
+    top: 17px;
+}
+.name{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: -85px;
+    color: var(--white);
+    
+}
+/* .expiry-date{
+    display: flex;
+} */
+.numbers{
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 25px;
+}
+.security-code{
+    color: var(--dark-grayish-violet);
+    position: relative;
+    top: 114px;
+    left: 164px;
+}
+
+input#cardholder, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;}
+    .card-front,
+    .card-back{
+        box-shadow: 1px 10px 20px 2px hsl(278, 68%, 11%);
+    }
+    input#cardnumber{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;}
+    input#expiry-date{
+        width: 35%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+    }
+    input#security-code{
+        /* width: 100%; */
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+    }
+    .expiry-date{
+        display: flex;
+    }
+    /* .security-code-input{
+        position: relative;
+        top: -10px;
+        right: -50px;
+    }
+    .cvc{
+        position: relative;
+        top: -9px;
+    } */
+  /* input#security-code{
+    width: 120%;
+  } */
+.input{
+    display: flex;
+}
+::placeholder{
+    font-family:'Space Grotesk', sans-serif;
+}
+.exp-date{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.submit{
+    width: 100%;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+}
+button{
+    margin-top: 20px ;
+    font-family:'Space Grotesk', sans-serif;;
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+@media only screen and (max-width: 1005px) {
+main{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    position: none;
+    left: 1px;
+}
+.bg-main{
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+}
+.card-front{
+    width: 55%;
+    height: 20%;
+z-index: 7;
+box-shadow: none;
+/* position: absolute; */
+left: 0;
+border-radius: 5px;
+}
+.numbers,
+.name{
+    font-size: 80%;
+    position:relative;
+    top: -10px;
+}
+.name{
+    position: relative;
+    top: 0;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 39px;
+}
+.numbers{
+    position: relative;
+    top: 32px;
+    font-size: 18px;
+}
+.card-logo{
+    z-index: 9;
+    position: relative;
+    left: 80px;
+    bottom: 10px;
+    width: 40px;
+}
+.security-code{
+    position: absolute;
+    right: -53px;
+    top: 49px;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+  }
+
+  body::after {
+    content: "";
+    background: url("images/bg-main-mobile.png") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    z-index: -2;
+
+  }
+
+  #main-container {
+    flex-direction: column;
+}
+
+  .card {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -77px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-front {
+    margin-top: -100px;
+    z-index: 1;
+    width: 250px;
+    margin-left: -10px;
+    height: 149px;
+    margin-top: -59px;
+
+    margin-left: -51px;
+
+  }
+
+  .card-back {
+    width: 250px;
+    margin-left: 58px;
+    height: 149px;
+    border-radius: 5px;
+  }
+
+  .security-code {
+    right: 3%;
+  }
+
+  .numbers {
+    font-size: 15px;
+  }
+
+
+  input {
+    width: 350px;
+  }
+
+  .month,
+  .year {
+    width: 80px;
+  }
+
+  input#security-code {
+    width: 160px;
+  }
+
+  button {
+    width: 350px;
+  }
+
+  .thank-you {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 374px) {
+    .card-back{
+        margin-left: 10px;
+        width:230px;
+        height:150px;
+    }
+    .card-front{
+        width:230px;
+        height:150px;
+    }
+    .card-logo{
+        position: relative;
+        left: 90px;
+    }
+    .security-code {
+        right: 9%;
+    }
+    label{
+        font-size: 15px;
+    }
+    }
+
+/*     
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 100px;
+        perspective: 1000px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      } */
